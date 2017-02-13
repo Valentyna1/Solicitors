@@ -6,7 +6,16 @@
 		});
 	});
 
+	// init slickNav
+	$('.header-nav').slicknav({
+		label: '',
+		prependTo: '.header .container',
+	});
+
 	// init formstayler
 	$('select').styler();
+
+	
+
 })(jQuery);
 

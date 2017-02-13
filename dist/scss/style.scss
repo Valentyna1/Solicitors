@@ -16,20 +16,39 @@
 	background: url("../img/inner-bg.jpg") no-repeat top center;
 	background-size: cover;
 	text-align: center;
+	@media (max-width: 1023px){
+		height: auto;
+		padding: 40px 0;
+	}
 	.inner-block{
 		color: #fff;
 		h1{
 		    font-size: 72px;
 		    margin-bottom: 26px;
+		    @media (max-width: 599px){
+				font-size: 40px;
+			}
+			@media (max-width: 230px){
+				font-size: 30px;
+			}
 		}
     	& > span{
     		font-size: 28px;
+    		@media (max-width: 599px){
+				font-size: 20px;
+			}
+			@media (max-width: 599px){
+				font-size: 15px;
+			}
     	}
     	.inner-form{
 			margin-top: 46px;
 			padding: 25px 35px;
 			background: rgba(0,0,0,.45);
 			border-radius: 2px;
+			@media (max-width: 599px){
+				padding: 10px 10px;
+			}
 			.more-option{
 		        display: block;
 		        cursor: pointer;
@@ -38,10 +57,28 @@
 		        margin-top: 10px;
       		}
       		.first-form{
-		        .form-control{
-		        	width: 326px;
-		        	margin-right: 7px;
+      			input {
+		        	& + input{
+		        		margin-left: 7px;
+		        		@media (max-width: 959px){
+		        			margin-left: 0;
+		        			margin-top: 10px;
+		        		}
+		        	}
 		        }
+		        .form-control{
+		        	height: 57px;
+		        	width: 326px;
+		        	font-size: 16px;
+		        	@media (max-width: 959px){
+		        		width: 100%;
+		        	}
+		        }
+		        .form-btn{
+		        	@media (max-width: 959px){
+		        		width: 100%;
+		        	}
+		        }		        
       		}
       		.second-form{
 		        display: none;
@@ -50,35 +87,53 @@
 		        	overflow:hidden;
 		        	.choose{
 			        	float: left;
-			        	font-size: 16px;
-			        	margin-top: 20px;
+			        	margin: 20px 0;
 			        	width: 220px;
-			        	margin-right: 7px;
-				        .form-choose{
+			        	@media (max-width: 599px){
+			        		width: 100%;
+			        		margin: 10px 0;			        		    		
+			        	}
+			        	& + .choose{
+			        		margin-left: 7px;
+			        		@media (max-width: 599px){
+			        			& + .choose{
+			        				margin-left: 0;
+			        			}
+			        		}
+			        	}
+			        	.form-control{
+				        	height: 50px;
 				        	width: 100%;
 						}
+						
         			}
 		        }
         	}
         }
     }
 }
+.choose-service{
+	background: linear-gradient(to top,#e6e6e6, white);
+}
 .choose{
 	label{
 		display: block;
 		margin-bottom: 7px;
+		font-size: 16px;
 	}
 }
 .simple-block{
+	text-align: center;
 	height: 80px;
 	background: $bgGrey;
 	font-size: 18px;
 	color: $darkGrey; 
 	border-bottom: 1px solid #e4ebec;
-	padding-top: 30px;
-	margin-bottom: 40px;
+	padding: 30px 0 40px 0;
+	@media (max-width: 1099px){
+		font-size: 16px;
+	}
 	.simple{
-		margin: 0 15px;
 		a{
 			color: #ef6223;
 		}
@@ -87,22 +142,41 @@
 .service-wrap{
 	.servise-item{
 		overflow: hidden;
-		padding: 20px 10px;
-		.icon{
-			height: 35px;
+		padding: 20px;
+		height: 165px;
+		@media (max-width: 959px){
+			width: 50%;
+		}
+		@media (max-width: 599px){
+			width: 100%;
+			height: auto;
+			text-align: center;
+		}
+		& + .servise-item{
+			@media (max-width: 599px){
+				margin-top: 20px;
+			}
 		}
 		.item-title{			
 			color: #ef6223;
 			margin: 10px 0;
-			p{
-				font-size: 20px;
-				margin-right: 3px;
-			}
+			font-size: 20px;
+			margin-right: 3px;
 		}
 		.paragraph{
 			width: 70%;
 			font-size: 16px;
 			color: $darkGrey;
+			@media (max-width: 1099px){
+				width: 80%;
+			}
+			@media (max-width: 959px){
+				width: 90%;
+			}
+			@media (max-width: 599px){
+				width: 100%;
+				text-align: left;
+			}
 		}
 	}
 }
@@ -116,28 +190,44 @@
 		margin-bottom: 50px;
 	}
 }
-.aticles{
-	padding: 65px 0;
+.aticle-wrap{
+	overflow: hidden;
+	padding-top: 65px;
 	.title{
 		color: #fff;
 		font-size: 24px;
 		text-align: center;
 		margin-bottom: 50px;
 	}
+	.servise-item{
+		padding: 0 10px;
+		@media (max-width: 959px){
+			width: 100%;
+		}
+	}
 }
-.aticles{
+.aticle-wrap{
 	.aticle-item{
 		background: #fff;
 		border-top: 7px solid #90bed5;
 		border-radius: 2px;
 		padding: 25px;
-		margin: 0 11px;
 		min-height: 210px;
 		margin-bottom: 50px;
+		@media (max-width: 959px){
+			min-height: 1px;
+			margin-bottom: 10px;
+			& + .aticle-item{
+				@media (max-width: 959px){
+					margin-top: 10px;
+				}
+			}
+		}			
 		.aticle-title{
 			font-size: 20px;
 			color: $darkGrey;
 			margin-bottom: 15px;
+
 		}
 		.aticle-text{
 			font-size: 16px;
@@ -149,6 +239,7 @@
 		}
 	}
 }
+
 .country-wrap{
 	.title{
 		text-align: center;
@@ -169,17 +260,26 @@
 	padding: 15px 0;
 	border-top: 1px solid #e2e6e7;
 	border-bottom: 1px solid #e2e6e7;
+	line-height: 17px;
 }
 .find-solicitors{
 	overflow: hidden;
 	.find-text{
 		width: 50%;
 		float: left;
-		padding: 20px 27px;
+		padding: 26px 27px;
 		@extend %vertical-align;
+		font-size: 30px;
+		color: #fff;
+		@media (max-width: 959px){
+			font-size: 20px;
+		}
+		@media (max-width: 767px){
+			width: 100%;
+			text-align: center;
+		}
 		span{
-			font-size: 30px;
-			color: #fff;
+			
 			&+span{
 				margin-left: 25px;
 			}
@@ -188,15 +288,21 @@
 	.country-link{
 		width: 50%;
 		float: left;
+		@media (max-width: 767px){
+			width: 100%;
+		}
 		.link{
 			width: 33.3333%;
 			float: left;
 			padding: 33px 0;
 			text-align: center;
 			border-left: 1px solid #a54619;
-			height: 100%;
+			
 			span{
 				display: block;
+			}
+			@media (max-width: 767px){
+				border: none;
 			}
 		}
 	}
@@ -206,6 +312,9 @@
 		font-size: 24px;
 		color: #fff;
 		margin-bottom: 10px;
+		@media (max-width: 959px){
+			font-size: 20px;
+		}
 	}
 	.count{
 		font-size: 14px;
@@ -215,24 +324,39 @@
 .category-btn{
 	text-align: center;
 	.btn{
-		margin-top: 20px;
+		margin-top: 20px;				
 		& + .btn{
 			margin-left: 15px;
 		}
+		@media (max-width: 599px){
+			width: 100%;
+			margin: 0;
+			& + .btn{
+				margin-left: 0;
+			}
+		}
 	}
+	
 }
 .question-wrap{
 	overflow: hidden;
-	padding: 45px 0;
+	padding: 45px 10px;
 	margin-top: 75px;
 	.question-block{
 		width: 50%;
 		display: inline-block;
 		vertical-align: bottom;
+		@media (max-width: 792px) {
+			width: 100%;
+		}
 		.title{
 			font-size: 32px;
 			color: #fff;
 			margin-bottom: 20px;
+			@media (max-width: 792px) {
+				text-align: center;
+				font-size: 24px;
+			}
 		}
 		p{
 			font-size: 16px;
@@ -244,5 +368,10 @@
 		text-align: right;
 		display: inline-block;
 		vertical-align: bottom;
+		@media (max-width: 792px) {
+			width: 100%;
+			text-align: center;
+			margin-top: 20px;
+		}
 	}
 }

@@ -4,8 +4,15 @@
 	width: $desktopContainerWidth;
 	padding: 0 auto;
 	margin: 0 auto;
+	@media (max-width: 1099px){
+		width: $mediumContainerWidth;
+	}
+	@media (max-width: 1023px){
+		width: 100%;
+	}
 }
 .header{
+	position: relative;
 	height: $desktopHeaderHeight;
 	width: 100%;
 	background: #fff;
@@ -16,14 +23,29 @@
 	.header-nav{
 		float: right;
 		margin-top: 30px;
+		@media (max-width: 767px) {
+			display: none;
+		}
 		li{
 			display: inline-block;
 			margin-left: 30px;
 			&:last-child{
 				margin-left: 40px;
+				.form-control{
+					display: none;
+					@media (max-width: 767px){
+						display: inline-block;
+						vertical-align: middle;
+						margin-left: 15px;
+						width: 100%;
+					}					
+				}
 			}
 			a{
 				font-size: 16px;
+				@media (max-width: 767px){
+					font-size: 20px;
+				}
 				&:hover{
 					color: $generalOrange;
 				}
@@ -31,12 +53,19 @@
 		}
 	}
 }
+.slicknav_menu {
+	display:none;
+	@media (max-width: 767px) {
+		display: block;
+		float: right;
+		margin-top: 15px;
+	}
+}
 .form-control{
-  height: 57px;
   border-radius: 2px;
-  font-size: 16px;
   color: $inputGrey;
   padding: 0 25px;
+  font-size: 16px;
 }
 .form-btn{
   height: 57px;
@@ -57,6 +86,11 @@ input[type="checkbox"]{
     cursor: pointer;
     margin-right: 50px;
     font-size: 16px;
+    vertical-align: middle;
+    @media (max-width: 599px){
+		display: block;
+		margin-top: 10px;
+	}
     &::before{
       content: '';
       display: inline-block;
@@ -66,6 +100,8 @@ input[type="checkbox"]{
       background: #fff;
       box-shadow: 0px 2px 3px rgba(0,0,0,.22) inset;
       margin-right: 10px;
+      vertical-align: middle;
+
     }
   }
   &:checked{
@@ -76,21 +112,16 @@ input[type="checkbox"]{
     }
   }
 }
-.form-choose{
-	height: 50px;
-	border-radius: 2px;
-	font-size: 16px;
-	color: $inputGrey;
-	padding: 0 15px;
-}
-.choose-service{
-	background: linear-gradient(to top,#e6e6e6, white);
-}
-.service-wrap.article-wrap{
+.service-wrap{
 	.row{
 		margin: 0 -10px;
 	}
-} 
+}
+// .aticle-wrap{
+// 	.row{
+// 		margin: 0 -10px;
+// 	}
+// }
 .servise-item{
 	width: 33.3333%;
 	float: left;

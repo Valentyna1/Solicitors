@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/slicknav.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link media="all" rel="stylesheet" href="css/style.css" type="text/css" >
 </head>
@@ -18,7 +19,7 @@
 			<ul class="header-nav">
 				<li><a href="#">Aticles</a></li>
 				<li><a href="#">Contact</a></li>
-				<li><a href="#"><span class="icon serch-ic"></span></a></li>
+				<li><a href="#"><span class="icon serch-ic"></span><input type="text" name="area" class="form-control"></a></li>
 			</ul>
 		</div>
 	</div>
@@ -39,17 +40,17 @@
 							<div class="input-group">
 								<div class="choose">
 									<label  for="language">Language</label>
-									<select name="choose-service" class="form-choose choose-service" id="label">
+									<select name="choose-service" class="form-control choose-service" id="label">
 										<option value="">Language</option>
 									</select>
 								</div>
 								<div class="choose">
 									<label for="name">Name</label>
-									<input type="text" name="name" class="form-choose" placeholder="e.g. Joe Bloggs" id="name">
+									<input type="text" name="name" class="form-control" placeholder="e.g. Joe Bloggs" id="name">
 								</div>
 								<div class="choose">
 									<label for="id">SRA ID</label>
-									<input type="text" name="id" class="form-choose" id="id">
+									<input type="text" name="id" class="form-control" id="id">
 								</div>								
 							</div>
 							<div class="input-group">
@@ -80,8 +81,8 @@
 					<div class="servise-item">
 						<span class="icon home-ic"></span>
 						<div class="item-title">
-							<p>Commercial property 
-							<span class="numbers"> (6298)</span></p>
+							<span>Commercial property 
+							<span class="numbers"> (6298)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -90,8 +91,8 @@
 					<div class="servise-item">
 						<span class="icon keys-ic"></span>
 						<div class="item-title">
-							<p>Business and Commercial
-							<span class="numbers"> (4293)</span></p>
+							<span>Business and Commercial
+							<span class="numbers"> (4293)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -100,8 +101,8 @@
 					<div class="servise-item">
 						<span class="icon admin-ic"></span>
 						<div class="item-title">
-							<p>Employment  
-							<span class="numbers"> (2305)</span></p>
+							<span>Employment  
+							<span class="numbers"> (2305)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -110,8 +111,8 @@
 					<div class="servise-item">
 						<span class="icon commers-ic"></span>
 						<div class="item-title">
-							<p>Commercial litigation 
-							<span class="numbers"> (2590)</span></p>
+							<span>Commercial litigation 
+							<span class="numbers"> (2590)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -120,8 +121,8 @@
 					<div class="servise-item">
 						<span class="icon hands-ic"></span>
 						<div class="item-title">
-							<p>Advocacy 
-							<span class="numbers"> (1774)</span></p>
+							<span>Advocacy 
+							<span class="numbers"> (1774)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -130,8 +131,8 @@
 					<div class="servise-item">
 						<span class="icon apartment-ic"></span>
 						<div class="item-title">
-							<p>Banking 	
-							<span class="numbers"> (2190)</span></p>
+							<span>Banking 	
+							<span class="numbers"> (2190)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -140,9 +141,9 @@
 					<div class="servise-item">
 						<span class="icon people-ic"></span>
 						<div class="item-title">
-							<p>Children
+							<span>Children
 							<span class="numbers"> (726)</span>
-							</p>
+							</span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -151,8 +152,8 @@
 					<div class="servise-item">
 						<span class="icon resident-ic"></span>
 						<div class="item-title">
-							<p>Residential conveyancing 
-							<span class="numbers"> (4293)</span></p>
+							<span>Residential conveyancing 
+							<span class="numbers"> (4293)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -161,8 +162,8 @@
 					<div class="servise-item">
 						<span class="icon crime-ic"></span>
 						<div class="item-title">
-							<p>Crime 
-							<span class="numbers"> (1883)</span></p>
+							<span>Crime 
+							<span class="numbers"> (1883)</span></span>
 						</div>
 						<div class="paragraph">
 							<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
@@ -198,7 +199,7 @@
 				</div>
 			</div> 
 		</div>
-		<div class="aticles bg-blue">
+		<div class="aticle-wrap bg-blue">
 			<div class="container">
 				<div class="title">
 					<span>Legal articles, advice and help</span>
@@ -327,6 +328,7 @@
 	<script src='js/slick.min.js'></script>
 	<script src='js/plugin.js'></script>
 	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
 
 	<!-- init file -->
 	<script src="js/init.js"></script>
