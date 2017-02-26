@@ -240,6 +240,7 @@
 .jq-selectbox__select {
 	height: 50px;
 	line-height: 50px;
+	overflow: hidden;
 	/*padding: 0 45px 0 10px;
 	border: 1px solid #b5b5b5;*/
 	/*border-bottom-color: #B3B3B3;
@@ -355,6 +356,7 @@
 	padding: 0;
 }
 .jq-selectbox li {
+	display: block;
 	min-height: 18px;
 	padding: 5px 10px 6px;
 	-webkit-user-select: none;

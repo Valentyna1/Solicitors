@@ -2,7 +2,7 @@
 
 .container{
 	width: $desktopContainerWidth;
-	padding: 0 auto;
+	padding: 0 10px;
 	margin: 0 auto;
 	@media (max-width: 1099px){
 		width: $mediumContainerWidth;
@@ -117,11 +117,6 @@ input[type="checkbox"]{
 		margin: 0 -10px;
 	}
 }
-// .aticle-wrap{
-// 	.row{
-// 		margin: 0 -10px;
-// 	}
-// }
 .servise-item{
 	width: 33.3333%;
 	float: left;
@@ -159,11 +154,19 @@ input[type="checkbox"]{
 		li{
 			display: inline-block;
 			& + li{
-				margin-left: 30px;
+				margin-left: 30px;				
+			}
+			@media (max-width: 599px){
+				& + li{
+					margin-left: 10px;
+				}
 			}
 			a{
 				font-size: 12px;
 				color: $darkGrey;
+				@media (max-width: 599px){
+					font-size: 10px;
+				}
 				&:hover{
 					color: $generalOrange;
 				}

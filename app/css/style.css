@@ -193,7 +193,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
 
 .container {
   width: 1060px;
-  padding: 0 auto;
+  padding: 0 10px;
   margin: 0 auto; }
   @media (max-width: 1099px) {
     .container {
@@ -326,9 +326,15 @@ input[type="checkbox"] {
     display: inline-block; }
     .footer .footer-nav li + li {
       margin-left: 30px; }
+    @media (max-width: 599px) {
+      .footer .footer-nav li + li {
+        margin-left: 10px; } }
     .footer .footer-nav li a {
       font-size: 12px;
       color: #515a60; }
+      @media (max-width: 599px) {
+        .footer .footer-nav li a {
+          font-size: 10px; } }
       .footer .footer-nav li a:hover {
         color: #ef6223; }
   .footer .logo {
@@ -539,12 +545,12 @@ input[type="checkbox"] {
 
 .simple-block {
   text-align: center;
-  height: 80px;
+  min-height: 80px;
   background: #f6f8f8;
   font-size: 18px;
   color: #515a60;
   border-bottom: 1px solid #e4ebec;
-  padding: 30px 0 40px 0; }
+  padding: 30px 5px; }
   @media (max-width: 1099px) {
     .simple-block {
       font-size: 16px; } }
@@ -652,6 +658,10 @@ input[type="checkbox"] {
   border-top: 1px solid #e2e6e7;
   border-bottom: 1px solid #e2e6e7;
   line-height: 17px; }
+  .slider-wrap .areas-slider {
+    font-size: 16px; }
+    .slider-wrap .areas-slider a {
+      color: #ef6223; }
 
 .find-solicitors {
   overflow: hidden; }
@@ -709,7 +719,7 @@ input[type="checkbox"] {
     @media (max-width: 599px) {
       .category-btn .btn {
         width: 100%;
-        margin: 0; }
+        margin-top: 10px; }
         .category-btn .btn + .btn {
           margin-left: 0; } }
 
